@@ -2,7 +2,7 @@
 (function ($) {
     var appInit,consoleLog,eventListener;
     consoleLog = function () {
-        console.log('%cforguo   f2e.forguo.com', 'color: #fff;background: #000;padding:6px 20px;border-radius: 15px;margin-left: 27px;')
+        console.log('%ljydeve2014@163.com', 'color: #fff;background: #000;padding:6px 20px;border-radius: 15px;margin-left: 27px;')
         console.log("\n     ___________________________\n    |             |             |\n    |___          |          ___|\n    |_  |         |         |  _|\n   .| | |.       ,|.       .| | |.\n   || | | )     ( | )     ( | | ||\n   '|_| |'       `|'       `| |_|'\n    |___|         |         |___|\n    |             |             |\n    |_____________|_____________|\n\n")
     }
 
@@ -52,7 +52,7 @@
             fixedElements: '#header',
             navigation: true,
             navigationPosition: 'right',
-            navigationTooltips: ['首页', '关于我', '职业技能', '作品展', '联系我'],
+            navigationTooltips: ['首页', '关于我', '职业技能', '我的简历', '联系我'],
             /*导航菜单*/
             menu: '#menu',
 
