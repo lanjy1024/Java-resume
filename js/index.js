@@ -9,9 +9,9 @@
     eventListener = function () {
         //顶部文字切换
         $(".blog").mouseover(function() {
-            $(".name-a").html("forguo");
+            $(".name-a").html("java工程师");
         }).mouseout(function() {
-            $(".name-a").html("魏国");
+            $(".name-a").html("蓝景优");
         });
 
         //h1动画特效
