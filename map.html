@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<title>白银 - 显示全景控件</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" media="screen" />
+		<style type="text/css">
+			body,
+			html {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				font-family: "微软雅黑";
+			}
+
+			#allmap {
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+		<script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=sNPedV9L0ulpQDMCe08kyfnZ0YPu2qo4"></script>
+
+	</head>
+
+	<body>
+		<div id="allmap"></div>
+
+	</body>
+
+	<script type="text/javascript">
+		var map = new BMap.Map('allmap');
+		map.centerAndZoom(new BMap.Point(104.18, 36.55), 13);
+		map.enableScrollWheelZoom(true);
+		// 覆盖区域图层测试
+		map.addTileLayer(new BMap.PanoramaCoverageLayer());
+
+		var stCtrl = new BMap.PanoramaControl(); //构造全景控件
+		stCtrl.setOffset(new BMap.Size(30, 50));
+		map.addControl(stCtrl); //添加全景控件
+
+		map.addControl(new BMap.MapTypeControl()); //添加地图类型控件
+		map.addControl(new BMap.NavigationControl()); //缩放控件
+		map.addControl(new BMap.ScaleControl()); //比例尺控件
+	</script>
+
+</html>
